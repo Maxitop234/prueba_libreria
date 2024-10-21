@@ -36,7 +36,7 @@ def crear_usuario(request):
         form = Usuario(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponse('Usuario creado')  # Redirect to a success page after form submission
+            return redirect('mibiblioteca:mostrar_usuarios')  # Redirect to a success page after form submission
     else:
         form = Usuario()
     return render(request, 'crearusuario.html', {'form': form})
