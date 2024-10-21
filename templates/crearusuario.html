@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #f5f5dc; /* Light beige background */
+            font-family: 'Times New Roman', Times, serif; /* Classic font */
+        }
+
+        h2 {
+            color: #4b3d2a; /* Darker beige for headings */
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a classic look */
+            background-color: #fff; /* White background for the form */
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        .form-control {
+            background-color: #faf3e0; /* Light paper color for inputs */
+            border: 1px solid #ccc; /* Subtle border */
+        }
+
+        .btn-primary {
+            background-color: #6f4c3e; /* Dark brown button */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #5b3e30; /* Darker brown on hover */
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-center">Crear Usuario</h2>
+        <div class="form-container">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Crear Usuario</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* styles.css */
+
+body {
+    background-color: #99992e; /* Light beige background */
+    font-family: 'Times New Roman', Times, serif; /* Classic font */
+}
+
+h2 {
+    color: #4b3d2a; /* Darker beige for headings */
+    font-weight: bold;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a classic look */
+    background-color: #fff; /* White background for the form */
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-control {
+    background-color: #faf3e0; /* Light paper color for inputs */
+    border: 1px solid #ccc; /* Subtle border */
+}
+
+.btn-primary {
+    background-color: #6f4c3e; /* Dark brown button */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5b3e30; /* Darker brown on hover */
+}
